@@ -1,0 +1,52 @@
+<form>
+    <fieldset>
+      <legend>Register FO</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="ward">Ward:</label>
+      <input type="text" id="ward" name="ward" required>
+  
+      <label for="fo_number">Unique FO Number:</label>
+      <input type="text" id="fo_number" name="fo_number" required>
+  
+      <label for="reg_date">Date of Registration:</label>
+      <input type="date" id="reg_date" name="reg_date" required>
+  
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+  
+      <label for="activities">Activities Involved:</label>
+      <textarea id="activities" name="activities" rows="3" required></textarea>
+  
+      <label for="nin">NIN Number:</label>
+      <input type="text" id="nin" name="nin" required>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+  
+      <label for="directions">Directions to Home:</label>
+      <textarea id="directions" name="directions" rows="3" required></textarea>
+  
+      <label for="residence_type">Residence Type:</label>
+      <select id="residence_type" name="residence_type" required>
+        <option value="">--Select--</option>
+        <option value="rented">Rented</option>
+        <option value="owned">Owned</option>
+      </select>
+  
+      <label for="stay_years">Period of Stay in Ward (Years):</label>
+      <input type="number" id="stay_years" name="stay_years" min="10" required>
+      
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  

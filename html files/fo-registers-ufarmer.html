@@ -1,0 +1,39 @@
+<form>
+    <fieldset>
+      <legend>Register Urban Farmer</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required minlength="5" maxlength="50"><br>
+  
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Please select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+  
+      <label for="reg_date">Date of Registration:</label>
+      <input type="date" id="reg_date" name="reg_date" required><br>
+  
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br>
+  
+      <label for="activities">Activities Undertaken:</label>
+      <textarea id="activities" name="activities" required></textarea><br>
+  
+      <label for="contacts">Contacts:</label>
+      <input type="text" id="contacts" name="contacts" required><br>
+  
+      <label for="nin">NIN:</label>
+      <input type="text" id="nin" name="nin" required minlength="13" maxlength="13"><br>
+  
+      <label for="ward">Ward Name:</label>
+      <input type="text" id="ward" name="ward" required><br>
+  
+      <label for="unique_id">Unique ID:</label>
+      <input type="text" id="unique_id" name="unique_id" required><br>
+  
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  

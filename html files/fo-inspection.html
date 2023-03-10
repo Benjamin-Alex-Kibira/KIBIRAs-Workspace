@@ -1,0 +1,76 @@
+<h2>Inspect Produce and Approve Products</h2>
+
+<form>
+  <fieldset>
+    <div>
+        <label for="farmer-ward">Farmer Ward:</label>
+        <input type="text" id="farmer-ward" name="farmer-ward" required>
+      </div>
+      
+      <div>
+        <label for="farmer-activity">Activity Undertaken:</label>
+        <input type="text" id="farmer-activity" name="farmer-activity" required>
+      </div>
+      
+      <div>
+        <label for="farmer-contact">Contact:</label>
+        <input type="tel" id="farmer-contact" name="farmer-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </div>
+      
+      <div>
+        <label for="farmer-nin">NIN:</label>
+        <input type="text" id="farmer-nin" name="farmer-nin" pattern="[0-9]{13}" required>
+      </div>
+      
+      <div>
+        <label for="unique-id">Unique ID:</label>
+        <input type="text" id="unique-id" name="unique-id" required>
+      </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Produce Inspection</legend>
+    <label for="produce-name">Produce Name:</label>
+    <input type="text" id="produce-name" name="produce-name" required>
+
+    <div>
+        <label for="produce-quantity">Quantity:</label>
+        <input type="number" id="produce-quantity" name="produce-quantity" required>
+      </div>
+      
+      <div>
+        <label for="produce-type">Produce Type:</label>
+        <select id="produce-type" name="produce-type" required>
+          <option value="organic">Organic</option>
+          <option value="non-organic">Non-Organic</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="produce-quality">Quality:</label>
+        <select id="produce-quality" name="produce-quality" required>
+          <option value="good">Good</option>
+          <option value="fair">Fair</option>
+          <option value="poor">Poor</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="product-listed">Product Listed:</label>
+        <input type="checkbox" id="product-listed" name="product-listed" required>
+      </div>
+      
+      <div>
+        <label for="product-image">Product Image:</label>
+        <input type="file" id="product-image" name="product-image" accept="image/*" required>
+      </div>
+      
+      <div>
+        <label for="product-description">Product Description:</label>
+        <textarea id="product-description" name="product-description" rows="4" cols="50" required></textarea>
+      </div>
+      
+      <button type="submit">Approve</button>
+      
+  </fieldset>
+</form>
