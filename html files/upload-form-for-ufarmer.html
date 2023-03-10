@@ -2,47 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Upload Produce and Products</title>
+  <title>UFarm Produce Listing</title>
 </head>
 <body>
-  <h1>Upload Produce and Products</h1>
+  <h1>UFarm Produce Listing</h1>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Ward</th>
+      <th>Date</th>
+      <th>Unit Price</th>
+      <th>Quantity</th>
+      <th>Payment</th>
+      <th>Directions</th>
+      <th>Delivery</th>
+      <th>Produce Type</th>
+      <th>Status</th>
+      <th>Order Now</th>
+    </tr>
+    <tr>
+      <td>Tomatoes</td>
+      <td>Kamwokya</td>
+      <td>2023-03-10</td>
+      <td>500</td>
+      <td>10</td>
+      <td>Cash</td>
+      <td>Opposite the church</td>
+      <td>Pickup</td>
+      <td>Fruits</td>
+      <td>Available</td>
+      <td>9874561230</td>
+      <td>
+        <a href="tel:9874561230">Call Now</a>
+        <form action="order.php" method="post">
+          <input type="hidden" name="produce_name" value="Tomatoes">
+          <label for="customer_name">Name:</label>
+          <input type="text" id="customer_name" name="customer_name" required><br><br>
+          <label for="customer_email">Email:</label>
+          <input type="email" id="customer_email" name="customer_email" required><br><br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" required><br><br>
+          <input type="submit" value="Order">
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>Green Peppers</td>
+      <td>Ntinda</td>
+      <td>2023-03-11</td>
+      <td>1000</td>
+      <td>5</td>
+      <td>Mobile Money</td>
+      <td>Next to the supermarket</td>
+      <td>Delivery</td>
+      <td>Vegetables</td>
+      <td>Not Available</td>
+      <td>0123456789</td>
+      <td>
+        <a href="tel:0123456789">Call Now</a>
+        <form action="order.php" method="post">
+          <input type="hidden" name="produce_name" value="Green Peppers">
+          <label for="customer_name">Name:</label>
+          <input type="text" id="customer_name" name="customer_name" required><br><br>
+          <label for="customer_email">Email:</label>
+          <input type="email" id="customer_email" name="customer_email" required><br><br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" required><br><br>
+          <input type="submit" value="Order">
+        </form>
+      </td>
+    </tr>
+  </table>
   
-  <form action="submit.php" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="ward">Ward Name:</label>
-    <input type="text" id="ward" name="ward" required><br><br>
-
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date" required><br><br>
-
-    <label for="unit_price">Unit Price in Ugx:</label>
-    <input type="number" id="unit_price" name="unit_price" required><br><br>
-
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" required><br><br>
-
-    <label for="payment">Mode of Payment:</label>
-    <select id="payment" name="payment">
-      <option value="Cash">Cash</option>
-      <option value="Mobile Money">Mobile Money</option>
-      <option value="Bank Transfer">Bank Transfer</option>
-    </select><br><br>
-
-    <label for="directions">Directions:</label>
-    <textarea id="directions" name="directions" rows="4" cols="50"></textarea><br><br>
-
-    <label for="delivery">Mode of Delivery:</label>
-    <select id="delivery" name="delivery">
-      <option value="Pickup">Pickup</option>
-      <option value="Delivery">Delivery</option>
-    </select><br><br>
-
-    <label for="produce_type">Produce Type:</label>
-    <input type="text" id="produce_type" name="produce_type" required><br><br>
-
-    <input type="submit" value="Submit">
-  </form>
 </body>
 </html>
