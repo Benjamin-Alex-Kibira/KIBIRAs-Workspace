@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ufarm Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+	<form method="post" action="register_fo.php">
+		<fieldset>
+			<legend>FarmerOne Registration</legend>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name" minlength="5" maxlength="50" required>
+			<br>
+			<label for="gender">Gender:</label>
+			<input type="radio" name="gender" id="gender-male" value="male" required><label for="gender-male">Male</label>
+			<input type="radio" name="gender" id="gender-female" value="female" required><label for="gender-female">Female</label>
+			<br>
+			<label for="dob">Date of Birth:</label>
+			<input type="date" name="dob" id="dob" required>
+			<br>
+			<label for="activities">Activities:</label>
+			<textarea name="activities" id="activities" required></textarea>
+			<br>
+			<label for="contacts">Contacts:</label>
+			<input type="tel" name="contacts" id="contacts" pattern="[0-9]{9}" required>
+			<br>
+			<label for="nin">National Identification Number:</label>
+			<input type="text" name="nin" id="nin" minlength="13" maxlength="13" required>
+			<br>
+			<label for="ward">Ward Name:</label>
+			<input type="text" name="ward" id="ward" minlength="5" maxlength="50" required>
+			<br>
+			<label for="unique-id">Unique ID:</label>
+			<input type="text" name="unique-id" id="unique-id" required>
+			<br>
+			<input type="submit" value="Register">
+		</fieldset>
+	</form>
+</body>
+</html>
