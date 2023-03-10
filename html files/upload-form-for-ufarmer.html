@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Produce and Products</title>
+</head>
+<body>
+  <h1>Upload Produce and Products</h1>
+  
+  <form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="ward">Ward Name:</label>
+    <input type="text" id="ward" name="ward" required><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="unit_price">Unit Price in Ugx:</label>
+    <input type="number" id="unit_price" name="unit_price" required><br><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+
+    <label for="payment">Mode of Payment:</label>
+    <select id="payment" name="payment">
+      <option value="Cash">Cash</option>
+      <option value="Mobile Money">Mobile Money</option>
+      <option value="Bank Transfer">Bank Transfer</option>
+    </select><br><br>
+
+    <label for="directions">Directions:</label>
+    <textarea id="directions" name="directions" rows="4" cols="50"></textarea><br><br>
+
+    <label for="delivery">Mode of Delivery:</label>
+    <select id="delivery" name="delivery">
+      <option value="Pickup">Pickup</option>
+      <option value="Delivery">Delivery</option>
+    </select><br><br>
+
+    <label for="produce_type">Produce Type:</label>
+    <input type="text" id="produce_type" name="produce_type" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
